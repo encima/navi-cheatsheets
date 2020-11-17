@@ -1,0 +1,4 @@
+% Shell (Bash / ZSH)
+
+# Update all repos in a subdirectory (useful for Navi)
+cd <dir> && find . -maxdepth 1 -type d -exec sh -c '(cd {} && git pull)' ';'
